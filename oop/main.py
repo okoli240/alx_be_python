@@ -32,6 +32,22 @@ def main():
     # List all books in the library
     my_library.list_books()
 
+    # main.py
+# This code demonstrates polymorphism using a Shape class and its subclasses Rectangle and Circle.
+# It includes a main function that creates instances of Rectangle and Circle,
+# and prints their areas using the area method defined in each subclass.    
+from oop.polymorphism_demo import Rectangle, Circle
+
+def main():
+    shapes = [
+        Rectangle(10, 5),
+        Circle(7)
+    ]
+
+    for shape in shapes:
+        print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
+
+
 if __name__ == "__main__":
     main()
 # This code demonstrates the use of magic methods in a Book class and a simple library system.
