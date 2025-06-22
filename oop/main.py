@@ -1,21 +1,21 @@
-from book_class import Book
-
-def main():
-    # Creating an instance of Book
-    my_book = Book("1984", "George Orwell", 1949)
-
-    # Demonstrating the __str__ method
-    print(my_book)  # Expected to use __str__
-
-    # Demonstrating the __repr__ method
-    print(repr(my_book))  # Expected to use __repr__
-
-    # Deleting a book instance to trigger __del__
-    del my_book
-
 from library_system import Book, EBook, PrintBook, Library
 
 def main():
+    # Part 1: Demonstrating Book magic methods (__str__, __repr__, __del__)
+    print("=== Book Magic Methods Demo ===")
+    my_book = Book("1984", "George Orwell")
+    
+    # Demonstrating the __str__ method
+    print(my_book)  # Expected to use __str__
+    
+    # Demonstrating the __repr__ method
+    print(repr(my_book))  # Expected to use __repr__
+    
+    # Deleting a book instance to trigger __del__
+    del my_book
+
+    # Part 2: Library System Demo
+    print("\n=== Library System Demo ===")
     # Create a Library instance
     my_library = Library()
 
@@ -31,8 +31,9 @@ def main():
 
     # List all books in the library
     my_library.list_books()
-# Main execution for the library system
-
 
 if __name__ == "__main__":
     main()
+# This code demonstrates the use of magic methods in a Book class and a simple library system.
+# It includes a main function that creates instances of Book, EBook, and PrintBook,
+# adds them to a Library, and lists the books with their details.
