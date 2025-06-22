@@ -1,4 +1,4 @@
-from library_system import Book, EBook, PrintBook, Library
+'''from library_system import Book, EBook, PrintBook, Library
 
 def main():
     # Part 1: Demonstrating Book magic methods (__str__, __repr__, __del__)
@@ -36,6 +36,7 @@ def main():
 # This code demonstrates polymorphism using a Shape class and its subclasses Rectangle and Circle.
 # It includes a main function that creates instances of Rectangle and Circle,
 # and prints their areas using the area method defined in each subclass.    
+;'''
 from oop.polymorphism_demo import Rectangle, Circle
 
 def main():
